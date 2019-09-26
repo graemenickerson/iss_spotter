@@ -35,5 +35,13 @@ nextISSTimesForMyLocation((error, passTimes) => {
     return console.log("It didn't work!", error);
   }
   // success, print out the deets!
-  console.log(passTimes);
+  const format = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', hour: '2-digit', minute: '2-digit', second: '2-digit', timeZone: 'America/Vancouver'};
+  passTimes.forEach(element => {
+    const localDate = new Date(element.risetime * 1000).toLocaleString('en-US', format);
+    // let localDate = new Date(utcDate + " UTC");
+    const time = element.duration;
+    
+    console.log(`Next pass at: ${localDate} for ${time} seconds!`);
+  });
+  // console.log(passTimes);
 });
