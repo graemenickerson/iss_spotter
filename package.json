@@ -1,0 +1,28 @@
+{
+  "name": "iss_spotter",
+  "version": "1.0.0",
+  "description": "Script that prints to the log when the ISS will be overhead.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/graemenickerson/iss_spotter.git"
+  },
+  "keywords": [
+    "ISS",
+    "Space",
+    "Astronomy"
+  ],
+  "author": "Graeme Nickerson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/graemenickerson/iss_spotter/issues"
+  },
+  "homepage": "https://github.com/graemenickerson/iss_spotter#readme",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.2.0"
+  }
+}
