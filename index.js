@@ -2,7 +2,7 @@
 // Graeme Nickerson
 // September 26, 2019
 
-const { fetchMyIP, fetchCoordsByIP } = require('./iss');
+const { fetchMyIP, fetchCoordsByIP, fetchISSPasses } = require('./iss');
 
 
 // fetchMyIP((err, ipAddress) => {
@@ -19,5 +19,13 @@ const { fetchMyIP, fetchCoordsByIP } = require('./iss');
 //     console.log(err);
 //   } else {
 //     console.log(coordinates);
+//   }
+// });
+// const coords = { latitude: '49.27670', longitude: '-123.13000' };
+// fetchISSPasses(coords, (err, passes) => {
+//   if (err) {
+//     console.log(err);
+//   } else {
+//     console.log(passes);
 //   }
 // });
