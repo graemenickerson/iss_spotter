@@ -2,7 +2,7 @@
 // Graeme Nickerson
 // September 26, 2019
 
-const { fetchMyIP, fetchCoordsByIP, fetchISSPasses } = require('./iss');
+const { nextISSTimesForMyLocation } = require('./iss');
 
 
 // fetchMyIP((err, ipAddress) => {
@@ -29,3 +29,11 @@ const { fetchMyIP, fetchCoordsByIP, fetchISSPasses } = require('./iss');
 //     console.log(passes);
 //   }
 // });
+
+nextISSTimesForMyLocation((error, passTimes) => {
+  if (error) {
+    return console.log("It didn't work!", error);
+  }
+  // success, print out the deets!
+  console.log(passTimes);
+});
